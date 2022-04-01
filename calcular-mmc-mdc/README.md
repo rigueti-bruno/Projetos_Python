@@ -5,7 +5,7 @@
 As etapas para os cálculos serão:
 - Como decompor um número em fatores primos - _concluído_
 - Como decompor simultâneamente 2 números em fatores primos - _em andamento_
-- Como calcular o MMC - _não iniciado_
+- Como calcular o MMC - _em andamento_
 - Como Calcular o MDC - _em andamento_
 
 Para cada etapa haverá um código.

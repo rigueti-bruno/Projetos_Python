@@ -1,3 +1,4 @@
+# Código para cálculo do MDC:
 def decomp(a):
     seq = []
     while a > 1:
@@ -13,13 +14,19 @@ def decomp(a):
                 a = int(a / num)
     return seq
 
-a = int(input('Informe um número: '))
-b = int(input('Informe outro número: '))
+a = 25
+b = 100
 
 
 x = decomp(a)
      
 y = decomp(b)
 
-print(x)
-print(y)
+for i in x:
+    y.append(i)
+    
+m = 1
+for i in y:
+    m *= i
+    
+print(f'MDC = {m}')
