@@ -22,11 +22,19 @@ x = decomp(a)
      
 y = decomp(b)
 
-for i in x:
-    y.append(i)
+z =[]
+
+for i in range(len(x)):
+    for j in range(len(y)):
+        if x[i] == y[j]:
+            z.append(x[i])          
     
 m = 1
-for i in y:
+for i in z:
     m *= i
-    
+
+print(x)    
+print(y)
+print('...')
+print(z)    
 print(f'MDC = {m}')
