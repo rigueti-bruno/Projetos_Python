@@ -34,9 +34,13 @@ def mdc(a, b):
                 if div == 2:
                     seq2.append(i) # decomposição de e
                     e = int(e / i)
-        inter = list((set(seq1)).intersection(set(seq2))) # fatores que se repetem em nos dois
+        #inter = list((set(seq1)).intersection(set(seq2))) # fatores que se repetem nos dois
+        inter = []
+        for item in seq1:
+            if item in seq2 and item not in inter:
+                inter.append(item)
         return seq1, seq2, inter
-
+        
 x = 1000
 y = 600
 z = mdc(x, y)
