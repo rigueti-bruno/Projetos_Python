@@ -1,5 +1,4 @@
-# Código para cálculo do MDC:
-def decomp(a, b):
+def mdc(a, b):
     c = []
     c.append(a)
     c.append(b)
@@ -7,41 +6,38 @@ def decomp(a, b):
     if c[1] % c[0] == 0:
         return c[0]
     else:
-        seq = []
-        div1 = 0
-        div2 = 0
         d = c[0]
         e = c[1]
+        seq1 = []
+        seq2 = []
         while d > 1:
-            for num in range(1, d + 1):
-                for x in range(1, num + 1):
-                    resto = num % x
-                    if resto == 0:
-                        div1 += 1
-                        r2 = d % num
-                        if div1 == 2 and r2 == 0:
-                            seq.append(num)
-            d = int(d / num)
+            for i in range(1, d + 1):
+                div = 0
+                r1 = d % i
+                if r1 == 0:
+                    for j in range(1, i + 1):
+                        r2 = i % j
+                        if r2 == 0:
+                            div += 1
+                if div == 2:
+                    seq1.append(i) # decomposição de d
+                    d = int(d / i)
         while e > 1:
-            for num in range(1, e + 1):
-                for x in range(1, num + 1):
-                    resto = num % x
-                    if resto == 0:
-                        div2 += 1
-                        r3 = e % num
-                        if div2 == 2 and r2 == 0:
-                            seq.append(num)
-            e = int(e / num)
-        #if div == 4 and r2 == 0 and r3 == 0:
-            #seq.append(num)
-            #div = (div1 + div2) / 2
-            
-        return seq
-        #return div
-a = 15
-b = 25
+            for i in range(1, e + 1):
+                div = 0
+                r1 = e % i
+                if r1 == 0:
+                    for j in range(1, i + 1):
+                        r2 = i % j
+                        if r2 == 0:
+                            div += 1
+                if div == 2:
+                    seq2.append(i) # decomposição de e
+                    e = int(e / i)
+        inter = list((set(seq1)).intersection(set(seq2))) # fatores que se repetem em nos dois
+        return seq1, seq2, inter
 
-z = decomp(a, b)
+x = 1000
+y = 600
+z = mdc(x, y)
 print(z)
-
-

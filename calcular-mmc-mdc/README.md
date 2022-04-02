@@ -14,3 +14,13 @@ Desejo que o projeto contribua para insights para novos projetos!
 Observações e contribuições para melhoria serão bem vindas!
 
 > PROJETO EM ANDAMENTO
+
+Andamento do projeto:
+
+01 - Decompor:
+- > Na primeira versão, pegávamos os números de uma sequência para validar se eram primos, para depois validar se eram divisores do número em questão
+- > Na segunda versão, primeiro validamos se o número da sequência é divisor do número em análise para depois validarmos se ele é primo, tornando o processo mais ágil
+
+03 - MDC:
+- > Na versão 1, tentamos criar um único array com as decomposições dos 2 números, que não gerou o resultado esperado
+- > Na versão 2, conseguimos decompor os itens separadamente e construir um novo array apenas com os itens que se repetem nos 2
