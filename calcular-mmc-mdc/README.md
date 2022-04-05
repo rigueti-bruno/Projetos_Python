@@ -26,3 +26,8 @@ Andamento do projeto:
 - > Na versão 2, conseguimos decompor os itens separadamente e construir um novo array apenas com os itens que se repetem nos 2
 - > Na versão 3, criei 2 vetores com a quantidade de vezes que cada base em comum entre a decomposição dos 2 números - esses vetores contém os potenciais expoentes. Depois, criei um teste que identificava o menor valor para o expoente entre os valores nos vetores, calculei as potências entre as bases e os menores expoentes e as adicionei em um novo vetor. Então, calculei o produto entre os itens deste último vetor e achei o MDC. Realizei todas as conferências e teste e o código foi validado.
 - > Na versão 4, eu limpei dos os resíduos comentados no código, deixei apenas o produto entre os itens do vetor final como return da função e colquei a opção para o usuário inserir seus próprios números para teste e formatei o retorno final do código.
+
+
+> Desenvolver os cálculos para achar o MDC e o MMC estão sendo um bom exercício para desenvolver minha lógica. No entanto, descobri que o Python já tem funções para realizar esses cálculos em sua biblioteca nativa _"math"_:
+>- ***MMC - lcm()***
+>- ***MDC - gcd()***
