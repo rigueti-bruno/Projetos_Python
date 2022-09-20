@@ -1,0 +1,9 @@
+Metodos de Exclusão de Itens de Listas - Python:
+
+list = [1,2,3,4]
+
+list.remove(1) => list = [2,3,4] - o método .remove() exclui da lista o item especificado entre ()
+
+list.pop(1) => list = [1,3,4] - o método .pop() exclui o item do índice indicado entre ()
+
+list.clear() => list = [] - o método .clear() exclui todos os itens da lista
