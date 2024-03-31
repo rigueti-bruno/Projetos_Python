@@ -1,0 +1,1 @@
+Neste projeto eu pretendo desenvolver uma Solução em Python que Retornará o Valor Líquido a ser recebido por um funcionário os todos os valores a serem recolhidos pelo seu empregador para determinar o custo total da mão de obra, informando apenas o valor do Salário Bruto do Empredado e suas horas extras.
