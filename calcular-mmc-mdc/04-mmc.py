@@ -21,8 +21,8 @@ def decomp2(a, b):
                 b = int(b / num)
     return seq
 
-x = 12
-y = 24
+x = 8
+y = 64
 
 z = decomp2(x, y)
 m = 1
